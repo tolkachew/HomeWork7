@@ -19,8 +19,8 @@ public class Task1 {
                     }
                 }
             } while (s != null);
-            for (Map.Entry<String, Integer> line : map.entrySet()) {
-                System.out.println("Words per letter '"+line.getKey() + "' : " + line.getValue() + " in file");
+                for (Map.Entry<String, Integer> line : map.entrySet()) {
+                    System.out.println("Words per letter '"+line.getKey() + "' : " + line.getValue() + " in file");
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

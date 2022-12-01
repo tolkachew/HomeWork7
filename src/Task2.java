@@ -19,11 +19,9 @@ public class Task2 {
                     }
                 }
             } while (s != null);
-            {
                 for (Map.Entry<String, Integer> line : map.entrySet()) {
                     System.out.println("Letter '" + line.getKey() + "' : appears " + line.getValue() + " times");
                 }
-            }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
